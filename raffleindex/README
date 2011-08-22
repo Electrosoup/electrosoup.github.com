@@ -1,0 +1,6 @@
+This is the TGC package index.
+
+To add a package to the index, copy the egg file to the folder production/1,
+then run the 'makeindex.py' script in the root of this repository.  Add any
+new or changed files to git and commit and then push.  Your changes will be
+available within a few minutes.
