@@ -64,7 +64,6 @@ def _extractNameVersion(filename, tempdir):
 
     elif filename.endswith('.egg') or filename.endswith('.zip'):
         archive = ZipArchive(filename)
-
     try:
         for name in archive.names():
 
@@ -100,6 +99,7 @@ def _extractNameVersion(filename, tempdir):
                                  )
         output = popen.communicate()[0]
         return output.splitlines()[:2]
+
     finally:
         archive.close()
 
